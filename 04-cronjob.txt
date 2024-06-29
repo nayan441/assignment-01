@@ -1,0 +1,18 @@
+Cron job is a time based task scheduler in Ubuntu like operating system By using cron job we can ensuring a particular process  run at specific time without manual intervention. Cron jobs are useful for automating repetitive tasks such as backups, system maintenance, sending emails, and more.
+
+Syntax:
+* * * * * command_or_path_to_script
+| | | | |
+1 2 3 4 5
+1) Minute (0 - 59)
+2) Hour (0 - 23)
+3) Day of the month (1 - 31)
+4) Month (1 - 12)
+5) Day of the week (0 - 7)
+
+Example:
+command: 30 2 * * * /path/to/script.sh
+Explaination: Run a Script Every Day at 2:30 AM
+
+command: */5 * * * * /path/to/script.sh
+Explaination: Run a Script Every 5 Minutes
